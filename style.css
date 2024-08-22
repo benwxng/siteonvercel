@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "ppneuemontreal";
+    src: url(./fonts/ppneuemontreal-medium.otf);
+}
+
+html{
+    overflow-x: hidden;
+    
+}
+
+body{
+    font-family: "ppneuemontreal";
+    margin: 0;
+    padding: 20% 10%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fafafa;
+}
+
+.container {
+  
+    text-align: left;
+    /*margin-top: 40%;*/
+    
+}
+
+.container2{
+
+    margin-top: -20px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+
+#heading {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    opacity: 0; /* Ensure the initial opacity is set */
+    transform: translateX(-8%); /* Initial transform for animation */
+    transition: opacity 1s ease, transform 1.5s ease; /* Smooth transition */
+}
+
+#description {
+    font-size: 1.6rem;
+    opacity: 0;
+    transform: translateX(-8%);
+    transition: opacity 1s ease, transform 1.4s;
+
+}
+
+.currently{
+    font-size: 1.2rem;
+    color:#565656;
+    /*margin-top: 8px;*/
+    transform: translateY(10px);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s;
+}
+
+.links{
+
+   /* padding-top:16px;*/
+    font-size: 1em;
+    display: flex;
+    gap: 1em;
+
+}
+
+.links a{
+    color: #565656;
+}
+
+#substack, #bookshelf, #instagram{
+    opacity: 0;
+    transition:opacity 1s ease;
+}
+
+#location{
+    font-size: 0.75em;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    #heading {
+        font-size: 2.5rem;
+    }
+
+    #description {
+        font-size: 1.1rem;
+    }
+
+    .currently {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 992px) {
+    #heading {
+        font-size: 2rem;
+    }
+
+    #description {
+        font-size: 1rem;
+    }
+
+    .currently {
+        font-size: 1rem;
+    }
+
+    .container {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    #heading {
+        font-size: 1.75rem;
+    }
+
+    #description {
+        font-size: 0.9rem;
+    }
+
+    .currently {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    html{
+        overflow-x: hidden;
+    }
+
+    body {
+        padding: 70% 10%;
+    }
+
+    #heading {
+        font-size: 2.2rem;
+        letter-spacing: -1px;
+    }
+
+    #description {
+        padding-right: 20%;
+        font-size: 0.75rem;
+    };
+
+
+    .currently {
+        font-size: 0.65rem;
+
+    }
+
+    .links{
+
+        margin-top: -14px;
+        color: #565656;
+        gap: 0.5rem;
+
+    }
+
+    #substack{
+        font-size: 0.75em;
+    }
+    #bookshelf{
+        font-size: 0.75em;
+    }
+    #instagram{
+        font-size: 0.75em;
+    }
+
+    .container2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .container {
+        margin-top: 40%;
+        
+    }
+   
+}
+
+/*
+#pin{
+    margin-top:20px;
+    font-size: 14px;
+    position: relative;
+}
+
+#pin::after {
+    content: '';
+    padding-top: 20px;
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    width: 1%;
+    height: 100%;
+    background-color: red;
+    border-radius: 20%;
+    filter: blur(10px);
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    animation: glow 2s infinite;
+}
+
+
+@keyframes glow {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+}
+*/
